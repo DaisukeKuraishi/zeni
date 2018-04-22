@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  @include body-font;
 }
 
 // Custom Button Size
@@ -39,7 +40,7 @@ h6 {
 }
 
 .text-faded {
-  color: fade-out(white, 0.3);
+  color: fade-out($white, 0.3);
 }
 
 /* Map */
@@ -72,6 +73,7 @@ h6 {
   text-align: center;
 
   color: white;
+  background: fade-out($gray-800, .5);
 
   line-height: 45px;
   &:focus,
@@ -79,7 +81,7 @@ h6 {
     color: white;
   }
   &:hover {
-    background: gray-800;
+    background: $gray-800;
   }
   i {
     font-weight: 800;

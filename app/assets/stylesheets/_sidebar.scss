@@ -12,7 +12,8 @@
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: primary;
+  background: $primary;
+  border-left: 1px solid fade-out($white, 0.9);
 }
 
 .sidebar-nav {
@@ -30,7 +31,7 @@
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: $white;
   padding: 15px;
 }
 
@@ -47,6 +48,7 @@
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
+  background: fade-out($gray-800, .9);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -55,7 +57,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: white;
+  color: $white;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -83,17 +85,18 @@
 
   text-align: center;
 
-  color: white;
+  color: $white;
+  background: fade-out($gray-800, .5);
 
   line-height: 50px;
 
   z-index: 999;
   &:focus,
   &:hover {
-    color: white;
+    color: $white;
   }
   &:hover {
-    background: gray-800;
+    background: $gray-800;
   }
   &.active {
     // background-color: $white;

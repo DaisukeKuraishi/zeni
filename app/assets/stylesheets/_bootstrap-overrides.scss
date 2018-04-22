@@ -1,33 +1,38 @@
 a {
-  color: primary;
+  color: $primary;
   &:hover,
   &:focus,
   &:active {
+    color: darken($primary, 10%);
   }
 }
 
 .btn-primary {
-  background-color: primary !important;
-  border-color: primary !important;
-  color: white !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: $white !important;
   &:hover,
   &:focus,
   &:active {
+    background-color: darken($primary, 10%) !important;
+    border-color: darken($primary, 10%) !important;
   }
 }
 
 .btn-secondary {
-  background-color: secondary !important;
-  border-color: secondary !important;
-  color: white !important;
+  background-color: $secondary !important;
+  border-color: $secondary !important;
+  color: $white !important;
   &:hover,
   &:focus,
   &:active {
+    background-color: darken($secondary, 10%) !important;
+    border-color: darken($secondary, 10%) !important;
   }
 }
 
 .btn-dark {
-  color: white !important;
+  color: $white !important;
 }
 
 .btn {
@@ -36,13 +41,13 @@ a {
 }
 
 .bg-primary {
-  background-color: primary !important;
+  background-color: $primary !important;
 }
 
 .text-primary {
-  color: primary !important;
+  color: $primary !important;
 }
 
 .text-secondary {
-  color: secondary !important;
+  color: $secondary !important;
 }
